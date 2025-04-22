@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+.Contain {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 66px;
+  margin-left: 163px;
+}
+.image {
+  /* position: relative;
+  top: 93px;
+  left: 80px; */
+}
+.image img {
+  height: 456px;
+  width: 674px;
+}
+
+.Contain2 {
+  padding: 28px 32px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input & button control */
+.form input {
+    height: 20px;
+    width: 237px;
+    outline: none;
+    background-color: rgb(6, 6, 6);
+    padding: 9px 13px;
+    margin-top: 6px;
+    border: 1px solid rgb(77 75 75);
+    border-radius: 5px;
+    font-size: 12px;
+}
+.form input::placeholder {
+  color: rgb(134, 140, 140);
+}
+.form button {
+  margin: 20px 15px;
+  width: 241px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #0069ad;
+  color: #95a6b2;
+  border: none;
+  font-weight: 600;
+}
+
+.rows {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-top: 1px;
+}
+.OR {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 600;
+}
+.row {
+  border: 1px solid #282626;
+  height: 0px;
+  width: 100px;
+}
+
+/* Facebook-link control */
+.facebook-flex-link {
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.facebook svg {
+  background-color: #000000;
+
+  color: #0095f6;
+}
+
+.link a {
+  color: #0095f6;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+/* forgot & signup & apptext control */
+.forgot-sign-app-flex {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  margin-top: 19px;
+}
+.link2 a {
+  font-size: 13px;
+  color: white;
+}
+.signup a {
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 4px;
+}
