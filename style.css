@@ -1,61 +1,75 @@
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
   text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 body {
   background-color: black;
 }
+
+/* Main container */
 .Contain {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   margin-top: 66px;
-  margin-left: 163px;
-}
-.image {
-  /* position: relative;
-  top: 93px;
-  left: 80px; */
-}
-.image img {
-  height: 456px;
-  width: 642px;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
+/* Image section */
+.image img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  max-height: 456px;
+  object-fit: cover;
+}
+
+/* Form section */
 .Contain2 {
   padding: 28px 32px;
-  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: #000;
+  margin-top: 20px;
 }
 
-/* Input & button control */
-.form{
-    margin-top: 24px;
+.form {
+  margin-top: 24px;
+  width: 100%;
 }
+
 .form input {
-    color: white;
-    height: 20px;
-    width: 237px;
-    outline: none;
-    background-color: rgb(6, 6, 6);
-    padding: 9px 13px;
-    margin-top: 6px;
-    border: 1px solid rgb(77 75 75);
-    border-radius: 5px;
-    font-size: 12px;
+  color: white;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  background-color: rgb(6, 6, 6);
+  padding: 9px 13px;
+  margin-top: 6px;
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 5px;
+  font-size: 14px;
 }
+
 .form input::placeholder {
   color: rgb(134, 140, 140);
 }
+
 .form button {
-  margin: 20px 15px;
-  width: 241px;
-  padding: 6px 12px;
+  margin: 20px 0;
+  width: 100%;
+  padding: 10px 12px;
   border-radius: 8px;
   background-color: #0069ad;
   color: #95a6b2;
@@ -63,47 +77,55 @@ body {
   font-weight: 600;
 }
 
+/* Divider rows */
 .rows {
   display: flex;
   align-items: center;
-  gap: 19px;
+  gap: 12px;
   margin-top: 1px;
 }
+
 .OR {
   color: #a8a8a8;
   font-size: 12px;
   font-weight: 600;
 }
+
 .row {
   border: 1px solid #282626;
-  height: 0px;
-  width: 100px;
+  height: 0;
+  flex-grow: 1;
 }
 
-/* Facebook-link control */
+/* Facebook link */
 .facebook-flex-link {
   margin-top: 23px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.facebook svg {
-  background-color: #000000;
 
+.facebook svg {
   color: #0095f6;
 }
 
+.SIGNtext {
+  font-size: 13px;
+  color: #EDF5F5;
+}
+
+/* Links */
 .link a {
   color: #0095f6;
   font-size: 13px;
   font-weight: 600;
   margin-top: 12px;
 }
-.link a:hover{
-    color: white;
+.link a:hover {
+  color: white;
 }
 
-/* forgot & signup & apptext control */
+/* Forgot / SignUp / App Section */
 .forgot-sign-app-flex {
   color: white;
   display: flex;
@@ -112,10 +134,12 @@ body {
   gap: 38px;
   margin-top: 19px;
 }
+
 .link2 a {
   font-size: 13px;
-  color: white;
+  color: #EDF5F5;
 }
+
 .signup a {
   color: #0095f6;
   font-size: 14px;
@@ -123,22 +147,84 @@ body {
   margin-left: 4px;
 }
 
-
-
-/* last-images */
-.last-images{
-    display: flex
-    ;
-        align-items: center;
-        gap: 7px;
-        margin-top: -20px;
-    
+/* App download images */
+.last-images {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: -20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.last-images img{
-    height: 38px;
-    width: 120px;
+
+.last-images img {
+  height: 38px;
+  width: 120px;
 }
-.last-images img:active{
-    opacity: 0.6;
-    
+.last-images img:active {
+  opacity: 0.6;
+}
+
+/* Footer */
+.Footer-flex {
+  margin-top: 54px;
+  color: #a8a8a8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 23px;
+  padding: 22px;
+  text-align: center;
+}
+
+.Top ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  justify-content: center;
+}
+
+.Bottom {
+  font-size: 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.Bottom svg {
+  height: 10px;
+  width: 10px;
+}
+
+/* ======= Responsive Media Queries ======= */
+
+@media (max-width: 768px) {
+  .Contain {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .Contain2 {
+    margin-top: 32px;
+  }
+
+  .form input, .form button {
+    font-size: 14px;
+  }
+
+  .image img {
+  display: none;
+  }
+
+  .Top ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .last-images {
+    gap: 12px;
+  }
 }
